@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700;800;900;1000&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #040C18;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
 }
 
-.App-link {
-  color: #61dafb;
+.content_box {
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.811);
+    border: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text-3d {
+    color: rgb(0, 136, 255);
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+.card-text-3d-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+.card-title {
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-title:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.card-text {
+    color: rgb(185, 185, 185);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-text:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.card-text-seeMore {
+    text-transform: uppercase;
+    color: rgb(0, 136, 255);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-text-seeMore:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.date-box {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
+    transform: translate3d(0px, 0px, 50px);
+}
+
+
+.card2 {
+    filter: hue-rotate(150deg);
+}
+
+.card3 {
+    filter: hue-rotate(300deg);
+}
+
+.card4 {
+    filter: hue-rotate(90deg);
 }
